@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:demo_events_mobile/login_page.dart';
-import 'package:demo_events_mobile/signup_page.dart';
+import 'package:demo_events_mobile/user_authentication/login_page.dart';
+import 'package:demo_events_mobile/user_authentication/signup_page.dart';
 
 
 

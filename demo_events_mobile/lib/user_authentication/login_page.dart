@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:demo_events_mobile/landing_page.dart';
-import 'package:demo_events_mobile/signup_page.dart';
-import 'package:demo_events_mobile/wellcome_page.dart';
-import 'package:demo_events_mobile/forgort_password_page.dart';
+import 'package:demo_events_mobile/user_services/landing_page.dart';
+import 'package:demo_events_mobile/user_authentication/signup_page.dart';
+import 'package:demo_events_mobile/user_authentication/wellcome_page.dart';
+import 'package:demo_events_mobile/user_authentication/forgort_password_page.dart';
 
 
 

@@ -1,6 +1,6 @@
-import 'package:demo_events_mobile/landing_page.dart';
+import 'package:demo_events_mobile/user_services/landing_page.dart';
 import 'package:flutter/material.dart';
-import 'package:demo_events_mobile/login_page.dart';
+import 'package:demo_events_mobile/user_authentication/login_page.dart';
 
 class ForgortPasswordPage extends StatefulWidget {
   const ForgortPasswordPage({super.key});
