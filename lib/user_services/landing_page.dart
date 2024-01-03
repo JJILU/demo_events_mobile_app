@@ -1,3 +1,4 @@
+import 'package:demo_events_mobile/user_authentication/wellcome_page.dart';
 import 'package:flutter/material.dart';
 
 class LandingPage extends StatefulWidget {
@@ -57,6 +58,27 @@ class _LandingPageState extends State<LandingPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: screens[index],
+      resizeToAvoidBottomInset: false,
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.white,
+        leading: IconButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const WellcomePage(),
+              ),
+            );
+          },
+          icon: const Icon(
+            Icons.arrow_back_ios,
+            size: 20,
+            color: Colors.black,
+          ),
+        ),
+      ),
       bottomNavigationBar: NavigationBarTheme(
         data: NavigationBarThemeData(
           indicatorColor: const Color(0xffFFC436),

@@ -1,3 +1,4 @@
+import 'package:demo_events_mobile/user_authentication/otp_verification.dart';
 import 'package:demo_events_mobile/user_services/landing_page.dart';
 import 'package:flutter/material.dart';
 import 'package:demo_events_mobile/user_authentication/login_page.dart';
@@ -83,11 +84,11 @@ class _ForgortPasswordPageState extends State<ForgortPasswordPage> {
                         minWidth: double.infinity,
                         height: 60,
                         onPressed: () {
-                          // placeholder login api end-point
+                          // placeholder otp verification api end-point
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => const LandingPage(),
+                              builder: (context) => const OtpVerifyPage(),
                             ),
                           );
                         },
