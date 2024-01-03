@@ -147,7 +147,14 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
               Expanded(
                 flex: 1,
                 child: GestureDetector(
-                  onTap: () => {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const LoginPage(),
+                      ),
+                    );
+                  },
                   child: Icon(
                     Icons.arrow_back,
                     color: Colors.grey[700],
