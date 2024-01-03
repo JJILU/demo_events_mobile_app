@@ -1,3 +1,5 @@
+import 'package:demo_events_mobile/user_authentication/forgort_password_page.dart';
+import 'package:demo_events_mobile/user_authentication/reset_password_page.dart';
 import 'package:flutter/material.dart';
 
 class OtpVerifyPage extends StatefulWidget {
@@ -45,7 +47,14 @@ class _OtpVerifyPageState extends State<OtpVerifyPage> {
       return SizedBox(
         width: MediaQuery.of(context).size.width,
         child: MaterialButton(
-          onPressed: () => {},
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const ResetPasswordPage(),
+              ),
+            );
+          },
           elevation: 0.0,
           highlightElevation: 0.0,
           color: const Color(0xffFFC436),
@@ -87,7 +96,14 @@ class _OtpVerifyPageState extends State<OtpVerifyPage> {
               Expanded(
                 flex: 1,
                 child: GestureDetector(
-                  onTap: () => Navigator.pop(context),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const ForgortPasswordPage(),
+                      ),
+                    );
+                  },
                   child: Icon(
                     Icons.arrow_back,
                     color: Colors.grey[700],

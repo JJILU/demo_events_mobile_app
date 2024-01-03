@@ -1,6 +1,8 @@
 
 // import 'package:demo_events_mobile/forgort_password_page.dart';
+import 'package:demo_events_mobile/user_authentication/forgort_password_page.dart';
 import 'package:demo_events_mobile/user_authentication/signup_page.dart';
+import 'package:demo_events_mobile/user_authentication/wellcome_page.dart';
 import 'package:demo_events_mobile/user_services/landing_page.dart';
 // import 'package:demo_events_mobile/otp_verification.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +15,7 @@ void main() {
   runApp(
     const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SignUpPage(),
+      home: WellcomePage(),
     ),
   );
 }

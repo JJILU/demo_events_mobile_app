@@ -4,8 +4,6 @@ import 'package:demo_events_mobile/user_authentication/signup_page.dart';
 import 'package:demo_events_mobile/user_authentication/wellcome_page.dart';
 import 'package:demo_events_mobile/user_authentication/forgort_password_page.dart';
 
-
-
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
 
@@ -75,7 +73,9 @@ class _LoginPageState extends State<LoginPage> {
                     padding: const EdgeInsets.symmetric(horizontal: 40),
                     child: Column(
                       children: [
-                        inputFile(label: "Email"),
+                        inputFile(
+                          label: "Email",
+                        ),
                         inputFile(
                           label: "Password",
                           obscureText: true,
@@ -166,9 +166,11 @@ class _LoginPageState extends State<LoginPage> {
                         onTap: () {
                           // placeholder signup api end-point
                           Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const SignUpPage(),),);
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const SignUpPage(),
+                            ),
+                          );
                         },
                         child: const Text(
                           "Sign up",
@@ -233,9 +235,7 @@ Widget inputFile({label, obscureText = false}) {
               color: Colors.grey[400]!,
             ),
           ),
-          
         ),
-        
       ),
       const SizedBox(
         height: 10,

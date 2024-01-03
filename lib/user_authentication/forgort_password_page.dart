@@ -97,7 +97,7 @@ class _ForgortPasswordPageState extends State<ForgortPasswordPage> {
                           borderRadius: BorderRadius.circular(15.0), //50
                         ),
                         child: const Text(
-                          "Submi",
+                          "Submit",
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.w700, //w600

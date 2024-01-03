@@ -1,3 +1,4 @@
+import 'package:demo_events_mobile/user_authentication/login_page.dart';
 import 'package:flutter/material.dart';
 
 class ResetPasswordPage extends StatefulWidget {
@@ -97,7 +98,14 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
       return SizedBox(
         width: MediaQuery.of(context).size.width,
         child: MaterialButton(
-          onPressed: () => {},
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const LoginPage(),
+              ),
+            );
+          },
           elevation: 0.0,
           highlightElevation: 0.0,
           color: const Color(0xffFFC436),
