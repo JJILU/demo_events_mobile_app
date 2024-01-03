@@ -1,5 +1,5 @@
 import 'package:demo_events_mobile/user_authentication/otp_verification.dart';
-import 'package:demo_events_mobile/user_services/landing_page.dart';
+// import 'package:demo_events_mobile/user_services/landing_page.dart';
 import 'package:flutter/material.dart';
 import 'package:demo_events_mobile/user_authentication/login_page.dart';
 
