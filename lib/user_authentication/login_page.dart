@@ -76,6 +76,7 @@ class _LoginPageState extends State<LoginPage> {
                         inputFile(
                           label: "Email",
                         ),
+                        const SizedBox(height: 20.0),
                         inputFile(
                           label: "Password",
                           obscureText: true,
@@ -114,20 +115,20 @@ class _LoginPageState extends State<LoginPage> {
                       padding: const EdgeInsets.only(top: 3, left: 3),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(50),
-                        border: const Border(
-                          bottom: BorderSide(
-                            color: Colors.black,
-                          ),
-                          top: BorderSide(
-                            color: Colors.black,
-                          ),
-                          left: BorderSide(
-                            color: Colors.black,
-                          ),
-                          right: BorderSide(
-                            color: Colors.black,
-                          ),
-                        ),
+                        // border: const Border(
+                        //   bottom: BorderSide(
+                        //     color: Colors.black,
+                        //   ),
+                        //   top: BorderSide(
+                        //     color: Colors.black,
+                        //   ),
+                        //   left: BorderSide(
+                        //     color: Colors.black,
+                        //   ),
+                        //   right: BorderSide(
+                        //     color: Colors.black,
+                        //   ),
+                        // ),
                       ),
                       child: MaterialButton(
                         minWidth: double.infinity,

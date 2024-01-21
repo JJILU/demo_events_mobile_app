@@ -21,7 +21,11 @@ class _OtpVerifyPageState extends State<OtpVerifyPage> {
         width: 55.0,
         height: 55.0,
         decoration: BoxDecoration(
-          color: Colors.grey[700],
+          color: Colors.white,
+          border: Border.all(
+            color: Colors.black,
+            width: 1.0,
+          ),
           borderRadius: BorderRadius.circular(10.0),
         ),
         child: const TextField(
